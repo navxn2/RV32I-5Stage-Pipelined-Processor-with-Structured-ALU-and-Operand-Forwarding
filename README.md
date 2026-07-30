@@ -55,12 +55,11 @@ This is the part most student projects skip. The testbench (`TOP_PROCESSOR_tb.v`
 
 Coverage includes reset behavior, ALU corner cases (max/min immediates, overflow, sign extension), pipeline throughput, EX/MEM and MEM/WB forwarding, load-use hazards, write-after-write hazards, high register numbers, and multi-register isolation.
 
-Full log: [`Simulation/results.txt`](Simulation/results.txt)
-
-### Bug found (and left visible, on purpose)
+Full log: [`Simulation/results.txt`](RV32I-5Stage-Pipelined-Processor-with-Structured-ALU-and-Operand-Forwarding/Simulation/results.txt)
+## Bug found (and left visible, on purpose)
 
 `SW` (store word) currently writes the immediate address offset into memory instead of the `rs2` register value. The testbench catches this itself (Test Group 17) and reports it explicitly — because a verification suite that only ever says PASS isn't verifying anything.
-
+#
 
 ## Running it yourself
 
