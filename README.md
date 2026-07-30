@@ -61,15 +61,6 @@ Full log: [`Simulation/results.txt`](Simulation/results.txt)
 
 `SW` (store word) currently writes the immediate address offset into memory instead of the `rs2` register value. The testbench catches this itself (Test Group 17) and reports it explicitly — because a verification suite that only ever says PASS isn't verifying anything.
 
-## Repository structure
-
-├── RTL/ Synthesizable Verilog source (19 modules)
-├── Testbench/ Self-checking testbench
-├── Memory/ Instruction memory init file (code.mem)
-├── Simulation/ Full simulation log / results
-├── Documentation/ Architecture notes, diagrams (WIP)
-└── Waveforms/ Simulation waveform captures (WIP)
-
 
 ## Running it yourself
 
