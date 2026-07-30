@@ -1,0 +1,2 @@
+# RV32I-5Stage-Pipelined-Processor-with-Structured-ALU-and-Operand-Forwarding
+Designed a 32-bit RV32I 5-stage pipelined RISC-V processor in Verilog HDL featuring a structured modular ALU and hardware operand forwarding. Implemented the complete RTL datapath, control unit, pipeline registers, instruction/data memories, and verified functionality using a self-checking testbench with 78 automated test cases in Xilinx Vivado.
